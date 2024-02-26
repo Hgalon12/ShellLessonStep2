@@ -7,101 +7,36 @@
     Shell.FlyoutBehavior="Flyout">
 
 
-    <!-- More than one Flyout item with multiple tabs-->
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 1,2">
-        <ShellContent
-            Title="Tab1" Icon="icon1.png"
-            ContentTemplate="{DataTemplate views:Page1}"
-            Route="Tab1" />
-        <ShellContent 
-                Title="Tab2" Icon="icon2.png"
-                ContentTemplate="{DataTemplate views:Page2}"
-                Route="Tab2" />
-    </FlyoutItem>
-    <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Route="tabs" Title="Tabs 3,4">
-        <ShellContent
-                Title="Tab3" Icon="icon3.png"
-                ContentTemplate="{DataTemplate views:Page3}"
-                Route="Tab3" />
-        <ShellContent
-            Title="Tab4" Icon="icon4.png"
-            ContentTemplate="{DataTemplate views:Page4}"
-            Route="Tab4" />
-    </FlyoutItem>
-    <MenuItem
-        Command="{Binding InfoCommand}"
-        IconImageSource="info.png"
-        Text="About" />
+   
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Domestic" Icon="paw.png">
+            <ShellContent
+                Title="Cats" 
+                ContentTemplate="{DataTemplate views:Cats}"
+                Route="Cats" />
+                <ShellContent
+        Title="Dogs" 
+        ContentTemplate="{DataTemplate views:Dogs}"
+        Route="Dogs" />
 
-
-    <!-- Flyout item with multiple tabs-->
-    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Route="tabs">
-        <ShellContent
-            Title="Tab1" Icon="icon1.png"
-            ContentTemplate="{DataTemplate views:Page1}"
-            Route="Tab1" />
-        <ShellContent 
-                Title="Tab2" Icon="icon2.png"
-                ContentTemplate="{DataTemplate views:Page2}"
-                Route="Tab2" />
-        <ShellContent
-                Title="Tab3" Icon="icon3.png"
-                ContentTemplate="{DataTemplate views:Page3}"
-                Route="Tab3" />
-        <ShellContent
-            Title="Tab4" Icon="icon4.png"
-            ContentTemplate="{DataTemplate views:Page4}"
-            Route="Tab4" />
-    </FlyoutItem>
-    <MenuItem
-        Command="{Binding InfoCommand}"
-        IconImageSource="info.png"
-        Text="About" />-->
-    
-    <!-- Bottom tabs-->
-    <!--<TabBar>
-    <ShellContent
-            Title="Tab1" Icon="icon1.png"
-            ContentTemplate="{DataTemplate views:Page1}"
-            Route="Tab1" />
-        <ShellContent
-                Title="Tab2" Icon="icon2.png"
-                ContentTemplate="{DataTemplate views:Page2}"
-                Route="Tab2" />
-        <ShellContent
-                Title="Tab3" Icon="icon3.png"
-                ContentTemplate="{DataTemplate views:Page3}"
-                Route="Tab3" />
-    <ShellContent
-            Title="Tab4" Icon="icon4.png"
-            ContentTemplate="{DataTemplate views:Page4}"
-            Route="Tab4" />
-    </TabBar>-->
-    
-    <!-- Bottom and top tabs-->
-    
-    <!--<TabBar>
+        </Tab>
         
-        <ShellContent
-            Title="Tab1" Icon="icon1.png"
-            ContentTemplate="{DataTemplate views:Page1}"
-            Route="Tab1" />
-        <Tab Title="Tab2,3" Icon="icon2.png" Route="Tabs2_3">
             
             <ShellContent
-                Title="Tab2" Icon="icon2.png"
-                ContentTemplate="{DataTemplate views:Page2}"
-                Route="Tab2" />
+                Title="Monkeys" Icon="monkey.png"
+                ContentTemplate="{DataTemplate views:Monkeys}"
+                Route="Monkeys" />
             <ShellContent
-                Title="Tab3" Icon="icon3.png"
-                ContentTemplate="{DataTemplate views:Page3}"
-                Route="Tab3" />
-        </Tab>
-        <ShellContent
-            Title="Tab4" Icon="icon4.png"
-            ContentTemplate="{DataTemplate views:Page4}"
-            Route="Tab4" />
-    </TabBar>-->
+                Title="Elephants" Icon="elephant.png"
+                ContentTemplate="{DataTemplate views:Elephants}"
+                Route="Elephants" />
+      
+             <ShellContent
+                Title="Bears" Icon="bear.png"
+                ContentTemplate="{DataTemplate views:Bears}"
+                Route="Bears" />
+      
+    </FlyoutItem>
     
     
 </Shell>
