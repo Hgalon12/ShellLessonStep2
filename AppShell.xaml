@@ -37,6 +37,11 @@
                 Route="Bears" />
       
     </FlyoutItem>
-    
-    
+    <MenuItem
+        Command="{Binding HelpCommand}"
+        IconImageSource="help.png"
+        Text="Help"
+        />
+
+
 </Shell>

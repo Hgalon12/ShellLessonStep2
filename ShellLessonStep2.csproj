@@ -70,7 +70,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Docs\" />
-	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 	<ItemGroup>
